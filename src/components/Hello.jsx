@@ -1,5 +1,5 @@
-export default function Hello (props) {
+export default function Hello() {
     return (
-        <h1>Hello {props.name}ui age is{props.age}</h1>
+        <h1>Hello</h1>
     )
 }

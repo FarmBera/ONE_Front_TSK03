@@ -8,6 +8,18 @@ export function useInput(init) {
     return {value, setInputValue, onChange}   
 };
 
+export function useNull(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (!arr[i]) return false
+    }
+    return true
+}
+
+export function useCheck(a, b) {
+    if (a !== b) return false
+    return true
+}
+
 /* export function useNull(arr) {
     // 데이터를 받는데, 하나라도 Null 값이 있으면 false 반환
     for(const item of arr){
